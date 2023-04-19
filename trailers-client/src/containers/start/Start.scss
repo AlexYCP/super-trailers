@@ -1,0 +1,53 @@
+.start {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F24527729%2Fthumb%2F1.jpg&f=1&nofb=1&ipt=eb7874bec8d16d53eabbb18ca09950fdc30a8ce4cf60a8be76085ce19a4a85cb&ipo=images');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    height: 37.2rem;
+    width: 100%;
+
+    h1 {
+        font-family: 'Bangers', cursive;
+        background-color: black;
+        color: white;
+        font-size: 13vw;
+        font-weight: 700;
+        text-align: center;
+
+        &:hover {
+            filter: drop-shadow(0 0 0.2em white);
+        }
+    }
+
+    button {
+        font-family: 'Bangers', cursive;
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        border-style: none;
+        border-radius: 0.4rem;
+        height: 2.7rem;
+        width: 38vw;
+
+        &:hover {
+            transform: translate(0.2rem, 0.2rem);
+            filter: drop-shadow(0 0 0.4em white);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .start {
+        h1 {
+            border: 0.4rem solid white;
+            width: 83vw;
+        }
+
+        button {
+            border: 0.2rem solid white;
+        }
+    }
+}

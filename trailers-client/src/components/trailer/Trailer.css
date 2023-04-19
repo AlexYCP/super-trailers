@@ -1,0 +1,118 @@
+.trailer {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F24527729%2Fthumb%2F1.jpg&f=1&nofb=1&ipt=eb7874bec8d16d53eabbb18ca09950fdc30a8ce4cf60a8be76085ce19a4a85cb&ipo=images");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 37.2rem;
+  width: 100%;
+}
+.trailer .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38vw;
+  height: 4rem;
+  width: 100%;
+}
+.trailer .navbar button {
+  background-color: black;
+  border-style: none;
+  border-radius: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+}
+.trailer .navbar button:hover {
+  filter: drop-shadow(0 0 0.5em white);
+}
+.trailer .navbar button .arrow {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+.trailer .navbar button .house {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+.trailer .video-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 33.2rem;
+  width: 100%;
+}
+.trailer .video-information .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+.trailer .video-information .video .yt-video:hover {
+  filter: drop-shadow(0 0 1em white);
+}
+.trailer .video-information .information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 60%;
+  width: 100%;
+}
+.trailer .video-information .information h5 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+.trailer .video-information .information h6 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.trailer .video-information .information p {
+  color: white;
+  font-size: 1.6rem;
+  width: 85%;
+}
+
+@media screen and (max-width: 800px) {
+  .trailer .video-information .video {
+    height: 60vh;
+    width: 100vw;
+  }
+  .trailer .video-information .information {
+    gap: 1vw;
+    height: 40vh;
+    width: 100vw;
+  }
+  .trailer .video-information .information h5 {
+    font-size: 4.5vw;
+  }
+  .trailer .video-information .information h6 {
+    margin: 0;
+    font-size: 3.4vw;
+  }
+  .trailer .video-information .information p {
+    margin-top: 0;
+    font-size: 2.8vw;
+    width: 87vw;
+  }
+}
+@media screen and (max-width: 412px) {
+  .trailer .video-information {
+    display: block;
+  }
+  .trailer .video-information .video {
+    height: 28vh;
+  }
+  .trailer .video-information .information {
+    gap: 3vw;
+    height: 20vh;
+  }
+}
+
+/*# sourceMappingURL=Trailer.css.map */

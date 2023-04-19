@@ -1,0 +1,69 @@
+.seeker {
+  height: 78rem;
+  width: 100%;
+}
+.seeker .searcher {
+  text-align: center;
+  height: 4.5%;
+  width: 100%;
+}
+.seeker .searcher input {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  border-style: none;
+  margin-top: 0.7rem;
+  height: 2rem;
+  width: 58vw;
+}
+.seeker .searcher input::placeholder {
+  font-size: 1rem;
+}
+.seeker .searcher input:hover {
+  filter: drop-shadow(0 0 0.4em white);
+}
+.seeker .searcher input:focus {
+  filter: drop-shadow(0 0 0.5em white);
+}
+.seeker .cards {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5vw;
+  padding: 1rem 0rem;
+  height: 95.5%;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .seeker {
+    height: 56rem;
+  }
+  .seeker .searcher {
+    height: 6.5%;
+  }
+  .seeker .searcher input {
+    border: 0.2rem solid white;
+  }
+  .seeker .cards {
+    gap: 3.4vw;
+    height: 93.5%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .seeker {
+    height: 40rem;
+  }
+  .seeker .searcher {
+    height: 9.7%;
+  }
+  .seeker .cards {
+    gap: 6vw;
+    height: 91.3%;
+  }
+}
+
+/*# sourceMappingURL=Seeker.css.map */

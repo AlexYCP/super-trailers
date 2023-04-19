@@ -1,0 +1,15 @@
+.card {
+  border: 0.2rem solid gold;
+  border-radius: 0.6rem;
+  width: 14vw;
+}
+.card:hover {
+  filter: drop-shadow(0 0 0.5em white);
+  transform: translate(0.2rem, 0.2rem);
+}
+.card img {
+  border-radius: 0.6rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,47 @@
+.content {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F24527729%2Fthumb%2F1.jpg&f=1&nofb=1&ipt=eb7874bec8d16d53eabbb18ca09950fdc30a8ce4cf60a8be76085ce19a4a85cb&ipo=images");
+  background-size: cover;
+  height: 84rem;
+  width: 100%;
+}
+.content .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32vw;
+  height: 4rem;
+  width: 100%;
+}
+.content .navbar button {
+  background-color: black;
+  border-style: none;
+  border-radius: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+}
+.content .navbar button:hover {
+  filter: drop-shadow(0 0 0.5em white);
+}
+.content .navbar button .arrow {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+.content .navbar button .house {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    height: 62rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .content {
+    height: 47rem;
+  }
+}
+
+/*# sourceMappingURL=Content.css.map */

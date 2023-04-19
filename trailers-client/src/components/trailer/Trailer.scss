@@ -1,0 +1,141 @@
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F24527729%2Fthumb%2F1.jpg&f=1&nofb=1&ipt=eb7874bec8d16d53eabbb18ca09950fdc30a8ce4cf60a8be76085ce19a4a85cb&ipo=images');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 37.2rem;
+    width: 100%;
+
+    .navbar {
+        @include centrar();
+        gap: 38vw;
+        height: 4rem;
+        width: 100%;
+
+        button {
+            background-color: black;
+            border-style: none;
+            border-radius: 0.4rem;
+            height: 2rem;
+            width: 2rem;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.5em white);
+            }
+
+            .arrow {
+                background-color: black;
+                color: white;
+                font-size: 1.4rem;
+            }
+
+            .house {
+                background-color: black;
+                color: white;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .video-information {
+        @include centrar();
+        flex-direction: column;
+        height: 33.2rem;
+        width: 100%;
+
+        .video {
+            @include centrar();
+            height: 40%;
+            width: 100%;
+
+            .yt-video {
+                &:hover {
+                    filter: drop-shadow(0 0 1em white);
+                }
+            }
+        }
+
+        .information {
+            @include centrar();
+            flex-direction: column;
+            gap: 1rem;
+            height: 60%;
+            width: 100%;
+
+            h5 {
+                color: white;
+                font-size: 2.8rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            h6 {
+                color: white;
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            p {
+                color: white;
+                font-size: 1.6rem;
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .trailer {
+        .video-information {
+            .video {
+                height: 60vh;
+                width: 100vw;
+            }
+
+            .information {
+                gap: 1vw;
+                height: 40vh;
+                width: 100vw;
+
+                h5 {
+                    font-size: 4.5vw;
+                }
+
+                h6 {
+                    margin: 0;
+                    font-size: 3.4vw;
+                }
+
+                p {
+                    margin-top: 0;
+                    font-size: 2.8vw;
+                    width: 87vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .trailer {
+        .video-information {
+            display: block;
+
+            .video {
+                height: 28vh;
+            }
+
+            .information {
+                gap: 3vw;
+                height: 20vh;
+            }
+        }
+    }
+}
